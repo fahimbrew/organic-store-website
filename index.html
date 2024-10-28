@@ -36,6 +36,9 @@
                     },
                     fontFamily: {
                         Poppins: 'Poppins',
+                    },
+                    backgroundImage: {
+                        leaf1: "url('./images/leaf01.png')",
                     }
                 }
             }
@@ -44,10 +47,98 @@
 </head>
 
 <body class="font-Poppins">
+    <!-- header section starts -->
     <header>
-        <h1 class="text-teal-400">Hi </h1>
+        <!-- nav section starts -->
+        <nav class="container mx-auto">
+            <div class="navbar">
+                <div class="navbar-start">
+
+                    <!-- brand logo title -->
+                    <a href="#" class=""><img class="w-28 md:w-36" src="images/logo.svg" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="hover:text-primary text-lg font-medium transition-colors duration-300"><a>Home</a>
+                        </li>
+                        <!-- large -->
+                        <li class="hover:text-primary text-lg font-medium transition-colors duration-300">
+                            <a>Everything</a>
+                        </li>
+                        <li class="hover:text-primary text-lg font-medium transition-colors duration-300">
+                            <a>Groceries</a>
+                        </li>
+                        <li class="hover:text-primary text-lg font-medium transition-colors duration-300"><a>About</a>
+                        </li>
+                        <li class="hover:text-primary text-lg font-medium transition-colors duration-300">
+                            <a>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex gap-2">
+                    <div class="flex gap-3 md:gap-4">
+                        <span class="text-primary text-xl font-semibold">$10.00</span>
+                        <a href="" class=""><i
+                                class="fa-solid fa-cart-shopping  text-xl text-primary font-semibold"></i></a>
+                        <a href="" class=""><i class="fa-solid fa-user text-xl"></i></a>
+                    </div>
+                    <!-- dropdown menu -->
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class=" lg:hidden">
+                            <i class="fa-solid fa-bars text-xl bg-primary btn"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-3 shadow right-0">
+                            <li><a>Home</a></li>
+                            <!--small  -->
+                            <li><a>Everything</a></li>
+                            <li><a>Groceries</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <!-- nav section ends -->
+        <!-- banner Section starts here -->
+        <section class="bg-leaf1 bg-no-repeat bg-right-bottom">
+            <div class="w-full h-full bg-body opacity-90">
+                <!-- hero section starts -->
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="images/bannerbg.png" class="" />
+                        <div class="space-y-2">
+                            <h5 class="text-lg font-semibold">Best Quality Products</h5>
+                            <h1 class="text-6xl font-bold">Join The Organic Movement!</h1>
+                            <p class="py-6 text-gray-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.
+                            </p>
+                            <button class="btn bg-accent text-white"><i class="fa-solid fa-cart-shopping"></i>
+                                Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- hero section ends -->
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <!-- banner Section ends here -->
+
 
     </header>
+    <!-- header section ends -->
+
 
 
     <main>
